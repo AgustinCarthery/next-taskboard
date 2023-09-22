@@ -1,4 +1,4 @@
-# Next.js OpenJira App
+# Next.js Tasks App
 
 Run local database
 
@@ -16,7 +16,7 @@ mongodb://localhost:27017/entriesdb
 
 ## Config env variables
 
-Rename **.env.temaplate**
+Rename **.env.template**
 
 ## Seed database
 
