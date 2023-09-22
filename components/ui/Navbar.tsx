@@ -14,9 +14,9 @@ export const Navbar: FC = () => {
           <MenuOutlinedIcon />
         </IconButton>
         <NextLink href={'/'} passHref>
-          {/* <Link underline="none" color="white"> */}
-          <Typography variant="h6">OpenJira</Typography>
-          {/* </Link> */}
+          <Link underline="none" color="white">
+            <Typography variant="h6">OpenJira</Typography>
+          </Link>
         </NextLink>
       </Toolbar>
     </AppBar>

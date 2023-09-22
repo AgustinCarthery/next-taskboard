@@ -1,5 +1,6 @@
 import { UIContext } from '@/context/ui';
 import { Entry } from '@/interfaces';
+import { dateFunctions } from '@/utils';
 import {
   Card,
   CardActionArea,
@@ -48,7 +49,9 @@ export const EntryCard: FC<Props> = ({ entry }) => {
         <CardActions
           sx={{ display: 'flex', justifyContent: 'end', paddingRight: 2 }}
         >
-          <Typography variant="body2">30 min ago</Typography>
+          <Typography variant="body2">
+            {dateFunctions.getFormatDistanceToNow(entry.createdAt)}
+          </Typography>
         </CardActions>
       </CardActionArea>
     </Card>
