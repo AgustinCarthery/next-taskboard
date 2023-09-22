@@ -1,7 +1,7 @@
 import { Entry } from '@/interfaces';
 import mongoose, { Model, Schema, mongo } from 'mongoose';
 
-interface IEntry extends Entry {}
+export interface IEntry extends Entry {}
 
 const entrySchema = new Schema({
   description: {
@@ -17,6 +17,7 @@ const entrySchema = new Schema({
       values: ['pending', 'in-progress', 'finished'],
       message: '{VALUE} is not allowed',
     },
+    default: 'pending',
   },
 });
 
