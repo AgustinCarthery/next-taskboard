@@ -20,7 +20,6 @@ import {
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import { Entry, EntryStatus } from '@/interfaces';
-import mongoose from 'mongoose';
 import { dbEntries } from '@/database';
 import { EntriesContext } from '@/context/entries';
 
@@ -57,7 +56,7 @@ export const EntryPage: FC<Props> = ({ entry }) => {
       status,
       description: inputValue,
     };
-    updateEntry(updatedEntry);
+    updateEntry(updatedEntry, true);
   };
 
   return (
